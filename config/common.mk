@@ -169,5 +169,8 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, vendor/heka/config/version.mk)
 
+# Import flipendo/turbo_adapter sepolicy
+$(call inherit-product, vendor/heka/config/sepolicy.mk)
+
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
