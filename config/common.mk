@@ -167,6 +167,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay
 
+$(call inherit-product, vendor/heka/config/bootanimation.mk)
+
 $(call inherit-product, vendor/heka/config/version.mk)
 
 # Import flipendo/turbo_adapter sepolicy
